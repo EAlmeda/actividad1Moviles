@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Actividad1</string>
+
+
+
+    <string name="tituloPlatos">Platos de la carta</string>
 </resources>
