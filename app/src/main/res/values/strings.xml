@@ -1,8 +1,5 @@
 <resources>
     <string name="app_name">Actividad1</string>
-
-
-
     <string name="tituloPlatos">Platos de la carta</string>
     <string name="addPlato">Añadir plato a la carta</string>
 </resources>
