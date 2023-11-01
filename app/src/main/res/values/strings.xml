@@ -1,5 +1,10 @@
 <resources>
-    <string name="app_name">Actividad1</string>
-    <string name="tituloPlatos">Platos de la carta</string>
+    <string name="app_name">Actividad1 - Restaurante</string>
+    <string name="tituloPlatos">Menú</string>
     <string name="fabAddPlato">Añadir plato a la carta</string>
+    <string name="alergenos">Alérgenos</string>
+    <string name="nombre">Nombre</string>
+    <string name="precio">Precio</string>
+    <string name="descripcion">Descripción</string>
+    <string name="anadir">Añadir</string>
 </resources>

@@ -8,17 +8,32 @@
     android:background="@color/light_green"
     tools:context="es.moviles.actividad1.menu.PlatosActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
         android:layout_marginHorizontal="32dp"
-        android:layout_marginVertical="10dp"
-        android:text="@string/tituloPlatos"
-        android:textAllCaps="true"
-        android:textColor="@color/white"
-        android:textSize="35sp"
-        android:textStyle="bold"
-        />
+        android:layout_marginVertical="10dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            app:tint="@color/white"
+            app:srcCompat="@drawable/ic_restaurant" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="32dp"
+            android:layout_marginVertical="10dp"
+            android:text="@string/tituloPlatos"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/white"
+            android:textSize="35sp" />
+
+        </LinearLayout>
+
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -35,7 +50,8 @@
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
             android:contentDescription="@string/fabAddPlato"
-            app:srcCompat="@drawable/ic_plus"/>
+            app:srcCompat="@drawable/ic_add"
+            android:tint="@color/white" />
 
         <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvPlatos"
