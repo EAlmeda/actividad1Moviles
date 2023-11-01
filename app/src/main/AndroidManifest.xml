@@ -13,7 +13,12 @@
         android:theme="@style/Theme.Actividad1"
         tools:targetApi="31">
         <activity
-            android:name="es.moviles.actividad1.menu.PlatosActivity"
+            android:name=".menu.AddPlatoActivity"
+            android:exported="false"
+            android:parentActivityName=".menu.PlatosActivity"
+            />
+        <activity
+            android:name=".menu.PlatosActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
