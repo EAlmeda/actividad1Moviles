@@ -18,23 +18,47 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="100dp">
+            android:layout_height="276dp"
+            android:src="@drawable/pizza" />
 
-        </ImageView>
 
         <TextView
             android:id="@+id/txtPlato"
             android:layout_width="match_parent"
             android:layout_height="83dp"
 
-            tools:text="PAELLA" />
+            android:textAlignment="center"
+            android:textSize="34sp"
+            tools:text="Pizza albahaca" />
 
-        <TextView
-            android:id="@+id/txtPrecio"
+        <com.google.android.material.chip.Chip
+            android:id="@+id/precio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/petrol_green"
+            android:textColor="@color/white"
+            android:text="5€"/>
+
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroup"
             android:layout_width="match_parent"
-            android:layout_height="83dp"
+            android:layout_height="wrap_content">
 
-            tools:text="5 €" />
+            <com.google.android.material.chip.Chip
+                android:id="@+id/alergenos_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gluten"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/alergenos_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lácteos"/>
+
+        </com.google.android.material.chip.ChipGroup>
+
     </LinearLayout>
 
 
