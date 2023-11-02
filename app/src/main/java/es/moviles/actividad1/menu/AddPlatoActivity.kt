@@ -30,7 +30,8 @@ class AddPlatoActivity : AppCompatActivity() {
             var platoToAdd = Plato(
                 edtNombre.text.toString(),
                 edtDescripcion.text.toString(),
-                edtPrecio.text.toString().toDouble()
+                edtPrecio.text.toString().toDouble(),
+                 "plato.jpg"
             )
             val intent = Intent(this, PlatosActivity::class.java)
             intent.putExtra("platoToAdd", platoToAdd)

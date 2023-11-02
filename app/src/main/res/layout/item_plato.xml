@@ -17,10 +17,10 @@
         android:orientation="vertical">
 
         <ImageView
+            android:id="@+id/imagenRuta"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:src="@drawable/pizza" />
-
+            android:src="@drawable/plato"/>
 
         <TextView
             android:id="@+id/txtPlato"
@@ -28,15 +28,15 @@
             android:layout_height="wrap_content"
 
             android:textAlignment="center"
-            android:textSize="34sp"
-            tools:text="Pizza albahaca" />
+            android:textAllCaps="true"
+            android:textSize="28sp"
+            />
 
         <com.google.android.material.chip.Chip
             android:id="@+id/txtPrecio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/petrol_green"
-            android:text="5€"
             android:textColor="@color/white" />
 
 

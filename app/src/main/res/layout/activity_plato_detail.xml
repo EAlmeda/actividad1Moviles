@@ -72,7 +72,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
                 android:padding="16sp"
-                android:text="Precio: $10.99"
+                android:text="Precio: 10.99€"
                 android:textColor="@color/white"
                 app:chipBackgroundColor="@color/petrol_green"
                 android:layout_gravity="end"/>

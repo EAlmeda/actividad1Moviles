@@ -2,6 +2,8 @@ package es.moviles.actividad1.menu
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import es.moviles.actividad1.R
 import es.moviles.actividad1.models.Plato
@@ -14,6 +16,8 @@ class PlatosAdapter(private val platos: List<Plato>,val clickPlato:(Int)->Unit )
         view.setOnClickListener{
             clickPlato.invoke(platosViewHolder.adapterPosition)
         }
+       val imagenView = view.findViewById<ImageView>(R.id.imagenRuta)
+        imagenView.setImageResource(R.drawable.pizza); //en vez de pizza poner lo de cada elemento
         return platosViewHolder
     }
 

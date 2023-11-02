@@ -15,11 +15,10 @@ import es.moviles.actividad1.models.Plato
 
 class PlatosActivity : AppCompatActivity() {
     private var platos = mutableListOf(
-        Plato("pizza", "maragarita", 33.2),
-        Plato("pizza", "maragarita", 33.2),
-        Plato("pizza", "maragarita", 33.2),
-        Plato("pizza", "maragarita", 33.2),
-        Plato("pizza", "maragarita", 33.2),
+        Plato("Pizza", "Pizza pesto hecha al horno de piedra. Ingredientes: Mozarella, tomatito, albahaca y pesto.", 14.99, "pizza.jpg"),
+        Plato("Ensalada", "Ensalada cesar con salsa agria. Ingredientes: Lechuga, tomate, picatostes, pollo, queso y salsa agria.", 12.10, "ensalada.jpg"),
+        Plato("Nachos", "Nachos con guacamole, pico de gallo y queso chedar.", 9.10, "nachos.jpg"),
+        Plato("Rissoto", "Risotto italiano. Ingredientes: arroz, champiñones, cebolla y queso parmesano.", 23.20, "risotto.jpg"),
     )
 
     private lateinit var rvPlatos: RecyclerView
@@ -45,6 +44,7 @@ class PlatosActivity : AppCompatActivity() {
         rvPlatos.layoutManager =
             GridLayoutManager(this,2) //2 columnas
         rvPlatos.adapter = platosAdapter
+
     }
 
     private fun clickPlato(position:Int){
