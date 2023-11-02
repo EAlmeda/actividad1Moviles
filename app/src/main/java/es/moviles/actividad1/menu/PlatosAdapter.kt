@@ -7,10 +7,14 @@ import es.moviles.actividad1.R
 import es.moviles.actividad1.models.Plato
 
 
-class PlatosAdapter(private val platos: List<Plato>) : RecyclerView.Adapter<PlatosViewHolder>() {
+class PlatosAdapter(private val platos: List<Plato>,val clickPlato:(Int)->Unit ) : RecyclerView.Adapter<PlatosViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PlatosViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_plato, parent, false)
-        return PlatosViewHolder(view)
+        val platosViewHolder = PlatosViewHolder(view)
+        view.setOnClickListener{
+            clickPlato.invoke(platosViewHolder.adapterPosition)
+        }
+        return platosViewHolder
     }
 
     override fun getItemCount() = platos.size

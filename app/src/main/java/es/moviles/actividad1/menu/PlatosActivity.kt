@@ -41,10 +41,16 @@ class PlatosActivity : AppCompatActivity() {
 
     //Inicializacion de RecyclerViews
     private fun initUI() {
-        platosAdapter = PlatosAdapter(platos)
+        platosAdapter = PlatosAdapter(platos, this::clickPlato)
         rvPlatos.layoutManager =
             GridLayoutManager(this,2) //2 columnas
         rvPlatos.adapter = platosAdapter
+    }
+
+    private fun clickPlato(position:Int){
+        val intent = Intent(this, PlatoDetailActivity::class.java)
+        intent.putExtra("platoToShow", platos[position])
+        startActivity(intent)
     }
 
     private fun setButtons(){
@@ -64,10 +70,8 @@ class PlatosActivity : AppCompatActivity() {
 
     @RequiresApi(Build.VERSION_CODES.TIRAMISU)
     private fun checkExtras(){
-        System.out.println("test")
         //Platos
         val plato = intent.extras?.getSerializable("platoToAdd", Plato::class.java)
-        System.out.println(plato)
 
         if(plato != null)
             platos.add(plato)
