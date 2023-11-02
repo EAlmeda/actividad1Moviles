@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginHorizontal="8dp"
-    android:layout_marginVertical="16dp"
+    android:layout_marginVertical="8dp"
     card_view:cardCornerRadius="4dp">
 
     <LinearLayout
@@ -18,26 +18,26 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="276dp"
+            android:layout_height="200dp"
             android:src="@drawable/pizza" />
 
 
         <TextView
             android:id="@+id/txtPlato"
             android:layout_width="match_parent"
-            android:layout_height="83dp"
+            android:layout_height="wrap_content"
 
             android:textAlignment="center"
             android:textSize="34sp"
             tools:text="Pizza albahaca" />
 
         <com.google.android.material.chip.Chip
-            android:id="@+id/precio"
+            android:id="@+id/txtPrecio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:backgroundTint="@color/petrol_green"
-            android:textColor="@color/white"
-            android:text="5€"/>
+            android:text="5€"
+            android:textColor="@color/white" />
 
 
         <com.google.android.material.chip.ChipGroup
@@ -49,13 +49,13 @@
                 android:id="@+id/alergenos_1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Gluten"/>
+                android:text="Gluten" />
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/alergenos_2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Lácteos"/>
+                android:text="Lácteos" />
 
         </com.google.android.material.chip.ChipGroup>
 
