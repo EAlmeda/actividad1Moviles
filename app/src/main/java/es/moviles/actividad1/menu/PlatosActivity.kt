@@ -49,6 +49,7 @@ class PlatosActivity : AppCompatActivity() {
 
     private fun clickPlato(position:Int){
         val intent = Intent(this, PlatoDetailActivity::class.java)
+
         intent.putExtra("platoToShow", platos[position])
         startActivity(intent)
     }

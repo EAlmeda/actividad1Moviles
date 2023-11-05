@@ -12,6 +12,6 @@ class PlatosViewHolder(view:View) : RecyclerView.ViewHolder(view) {
 
     fun render(plato: Plato){
         txtPlato.text = plato.nombre
-        txtPrecio.text = plato.precio.toString()
+        txtPrecio.text = plato.precio.toString() + " €"
     }
 }
